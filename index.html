@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Críticos Rolemaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Críticos Rolemaster para Beldar</h1>
+
+        <div class="input-group">
+            <label for="tipoDano">Selecciona el Tipo de Daño:</label>
+            <select id="tipoDano">
+                <option value="PLASMA">Plasma</option>
+                <option value="CONTUNDENTE">Contundente</option>
+                <option value="PERFORACION">Perforación</option>
+                <option value="CORTANTE">Cortante</option>
+                <option value="FUEGO">Fuego</option>
+                </select>
+        </div>
+
+        <div class="input-group">
+            <label for="severidadCritico">Selecciona la Severidad (A, B, C, D, E):</label>
+            <select id="severidadCritico">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="tirada">Introduce el resultado de la tirada:</label>
+            <input type="number" id="tirada" min="1" max="200">
+        </div>
+
+        <button id="calcularBtn">Calcular Crítico</button>
+
+        <div class="resultado">
+            <h2>Resultado:</h2>
+            <p id="resultadoTexto">Aquí aparecerá el resultado del crítico.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
